@@ -98,35 +98,6 @@ namespace ExpressionEvaluator.CodeAnalysis
             return new SyntaxTree(_diagnostics, expresion, endOfFileToken);
         }
 
-        //private ExpressionSyntax ParseTerm()
-        //{
-        //    var left = ParseFactor();
-
-        //    while (Current.Kind == SyntaxKind.PlusToken ||
-        //           Current.Kind == SyntaxKind.MinusToken)
-        //    {
-        //        var operatorToken = NextToken();
-        //        var right = ParseFactor();
-        //        left = new BinaryExpressionSyntax(left, operatorToken, right);
-        //    }
-
-        //    return left;
-        //}
-
-        //private ExpressionSyntax ParseFactor()
-        //{
-        //    var left = ParsePrimaryExpression();
-
-        //    while (Current.Kind == SyntaxKind.StarToken ||
-        //           Current.Kind == SyntaxKind.SlashToken)
-        //    {
-        //        var operatorToken = NextToken();
-        //        var right = ParsePrimaryExpression();
-        //        left = new BinaryExpressionSyntax(left, operatorToken, right);
-        //    }
-
-        //    return left;
-        //}
 
         private ExpressionSyntax ParsePrimaryExpression()
         {
